@@ -629,6 +629,7 @@ async function submitResults() {
 
   const url = GAS_URL + '?' + new URLSearchParams(params).toString();
   console.log('送信URL長さ:', url.length);
+  console.log('送信URL:', url);
 
   const script = document.createElement('script');
   script.src = url;
